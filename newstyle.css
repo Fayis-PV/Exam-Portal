@@ -267,8 +267,8 @@
         line-height: 20px;
         padding: 10vh 2vh;
         position: absolute;
-        left: auto;
-        bottom: -300%;
+        margin: 0 auto;
+        bottom: -350vh;
         height: 90vh;
         
 
