@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Portal</title>
+    <!-- Include flickity CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css">
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Include style CSS -->
+    <link rel="stylesheet" href="newstyle.css">
+    <!-- Include flickity JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <img src="imgs/uni-logo.png" alt="" class="logo">
+        <p><span>The Office of </span><span>Controller of Examination</span></p>
+    </header>
+    <section class="row">
+        <div class="col-lg-6">
+            <img src="imgs/DHIU_Main_Block_copy.jpg" alt="Darul Huda Islamic University" class="dh-img">
+            <div class="dh-bio">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, doloremque veritatis? Aspernatur pariatur provident soluta?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident harum omnis voluptatem dolorum tempore? Voluptatibus, eum, hic inventore veritatis sunt reprehenderit suscipit, enim quam repudiandae illum maxime vero excepturi debitis?
+            </div>
+            <div class="dh-contact row">
+                <div class="col-sm-6 ">
+                    <p>Darul Huda Islamic University</p>
+                    <p>Hidaya Nagar, Chemmad</p>
+                    <p>Thirurangadi PO, Malappuram</p>
+                    <p>Kerala, India, 673636</p>
+                </div>
+                <div class="col-sm-6">
+                    <a><img src="imgs/google-icon.png" alt=""> www.dhiu.in</a>
+                    <a><img src="imgs/gmail-icon.png" alt=""> dhiu@gmail.com</a>
+                    <a><img src="imgs/facebook-icon.png" alt=""> facebook@dhiu</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="row pl-3">
+                <div class="col-lg-5 exam-portal">
+                    <a href="" class="btn">Exam Portal</a>
+                    <a href="" class="btn">Exam Portal</a>
+                    <a href="" class="btn">Exam Portal</a>
+                    <a href="" class="btn">Exam Portal</a>
+                </div>
+                <!-- <div class="col-lg-1"></div> -->
+                <div class="col-lg-6 notice-board card">
+                    <h2>NOTICE BOARD</h2>
+                    <div class="notices">
+                        <ul class="notice-list">
+                          <li>This is the first notice.</li>
+                          <li>This is the second notice.</li>
+                          <li>This is the third notice.</li>
+                          <li>This is the fourth notice.</li>
+                          <!-- Add more notices as needed -->
+                        </ul>
+                      </div>
+                      
+                </div>
+                <div class="next-events">
+                    <h2>NEXT EVENTS</h2>
+                    <div class="carousel">
+                        <div class="cell active">
+                            <img src="imgs/event1.jpeg" alt="Event 1">
+                            <div class="carousel-caption">
+                            <h3>Event 1</h3>
+                            <p>Description of Event 1</p>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <img src="imgs/event2.jpeg" alt="Event 2">
+                            <div class="carousel-caption">
+                            <h3>Event 2</h3>
+                            <p>Description of Event 2</p>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <img src="imgs/event3.jpeg" alt="Event 3">
+                            <div class="carousel-caption">
+                            <h3>Event 3</h3>
+                            <p>Description of Event 3</p>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <img src="imgs/event2.jpeg" alt="Event 4">
+                            <div class="carousel-caption">
+                            <h3>Event 4</h3>
+                            <p>Description of Event 4</p>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <img src="imgs/event3.jpeg" alt="Event 5">
+                            <div class="carousel-caption">
+                            <h3>Event 5</h3>
+                            <p>Description of Event 5</p>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <img src="imgs/event1.jpeg" alt="Event 6">
+                            <div class="carousel-caption">
+                            <h3>Event 6</h3>
+                            <p>Description of Event 6</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript code for slider functionality
+        var carousel = new Flickity('.carousel', {
+        cellAlign: 'left',
+        contain: true,
+        wrapAround: true,
+        autoPlay: 3000 // Change slide every 3 seconds
+        });
+    </script>
+    <script>
+        var noticeBoard = document.querySelector('.notice-board');
+        var noticeList = document.querySelector('.notice-list');
+
+        noticeBoard.addEventListener('mouseenter', function() {
+        noticeList.style.animationPlayState = 'paused';
+        });
+
+        noticeBoard.addEventListener('mouseleave', function() {
+        noticeList.style.animationPlayState = 'running';
+        });
+
+        // noticeList.addEventListener('animationiteration', function() {
+        // var lastItem = noticeList.lastElementChild;
+        // noticeList.insertBefore(lastItem, noticeList.firstChild);
+        // });
+    </script>
+    
+</body>
+</html>

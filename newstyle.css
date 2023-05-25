@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  html {
+    overflow: overlay;
+  }
+  
+  body {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  header {
+    width: 100%;
+    height: 12vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+  }
+  
+  header img {
+    width: auto;
+    height: 75%;
+    display: block;
+    max-width: 40%;
+  }
+  
+  header p {
+    font-size: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    margin: 0;
+  }
+  
+  header p span {
+    display: block;
+  }
+  
+  .dh-img {
+    display: block;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+  
+  .dh-bio {
+    color: #1E375A;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 0.5vh;
+    text-align: justify;
+    border: #eff1f5 0.1px solid;
+    border-radius: 10px;
+  }
+  
+  .dh-contact {
+    font-size: 0.9rem;
+    color: #1E375A;
+    line-height: 10px;
+  }
+  
+  .dh-contact div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 25px 50px;
+  }
+  
+  .dh-contact img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .exam-portal {
+    width: 100%;
+    height: 50vh;
+    padding: 0vh 0.7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0px 0px 10px #e6eaef;
+  }
+  
+  .exam-portal a {
+    width: 95%;
+    height: 20%;
+    background-color: #2196f3;
+    color: #ffffff;
+    font-size: 1.3rem;
+    line-height: 8vh;
+    max-width: 600px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: auto;
+  }
+  
+  .exam-portal a:hover {
+    background-color: #0d47a1;
+  }
+  
+  .notice-board {
+    width: 90%;
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2196f3;
+    color: #ffffff;
+  }
+  
+  .notice-board h2 {
+    font-weight: bold;
+  }
+  
+  .notice-board .notices {
+    width: 100%;
+    height: 80%;
+    background-color: #ffffff;
+    color: #1E375A;
+    font-size: small;
+    border-radius: 0 0px 5px 5px;
+    overflow: hidden;
+  }
+  
+  .notice-board .notices .notice-list {
+    list-style-type: none;
+    animation: scroll-notice 10s linear infinite;
+  }
+  
+  @keyframes scroll-notice {
+    0% {
+      margin-top: 0;
+    }
+    100% {
+      margin-top: -200px;
+    }
+  }
+  
+  .notice-list li {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+  }
+  
+  .notice-list li:hover {
+    background-color: #eee;
+  }
+  
+  .next-events {
+    width: 100%;
+    height: 36vh;
+    margin-top: 1vh;
+    box-shadow: 0px 0px 10px #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .next-events h2 {
+    font-size: large;
+    margin: 10px 0 10px 20px;
+    font-weight: bolder;
+    color: #1E375A;
+  }
+  
+  .carousel {
+    width: 100%;
+    height: 80%;
+  }
+  
+  .cell {
+    width: 33%;
+    height: 28.8vh;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 0 15px;
+  }
+  
+  .cell img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .carousel-caption {  
+    background: linear-gradient(0deg,#219dcbb8,#bfe9f8c4);
+    width: 100%;
+    height: auto;
+    margin-left: -15%;
+    color: #11458d;
+    margin-bottom: -20px;
+    box-shadow: 0px 0px 20px #60bfde;
+    border: 0;
+}
+.cell h3 {
+    font-size: 15px;
+    line-height: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: auto;
+
+}
+.cell p {
+    font-size: 13px; 
+    margin: auto;   
+}
+.flickity-page-dots{
+    bottom: 0px !important;
+}
+.flickity-page-dots li.dot{
+    transition: all 0.5s;
+    background-color: #06084b;
+}
+
+@media screen and (max-width:992px) {
+    body{
+        overflow-y: unset;
+        height: auto;
+        background-color: #dae6f5;
+        padding-bottom: 100vh;
+    }
+    header{
+        height: 10vh;
+    }
+    .dh-img{
+        display: block;
+        margin:10vh auto;
+        width: 98%;
+        border-radius: 5px;
+        box-shadow: 0px 0px 50px #2254aa;
+    }
+    .dh-bio{
+        font-size: larger;
+        padding:10vh 6vw;
+        margin: 3%;
+        line-height: 35px;
+        margin: 10vh 4vw;
+        letter-spacing: 0.1vw;
+        word-spacing: 2px;
+        background-color: #08b7f2a5;
+        box-shadow: 0px 0px 20px #06a8de;
+        border: 0px;
+    }
+    .dh-contact{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        background-color: #eef9fc;
+        line-height: 20px;
+        padding: 10vh 2vh;
+        position: absolute;
+        left: 2vw;
+        bottom: -260%;
+        height: 90vh;
+        
+
+    }
+    .dh-contact img{
+        margin:1vh 1vw;
+    }
+    .exam-portal{
+        width: 95%;
+        height: 80vh;
+        margin: auto;
+        padding: 10vh 5vw;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px #fcfefe;
+        border: 0px;
+    }
+    .exam-portal a{
+        line-height: 10vh;
+    }
+    .notice-board{
+        margin: 10vh auto;
+        width: 95%;
+        height: 80vh;
+        border-radius: 10px;
+        border: 0;
+        background-color: #08b7f2a5;
+        box-shadow: 0px 0px 20px #06a8de;
+
+    }
+    .notice-board h2{
+        line-height: 10vh;
+    }
+    .notice-board .notices{
+        border-radius: 5px 5px 10px 10px;
+    }
+    .notice-board .notices li{
+        font-size: 2vh;
+    }
+    .next-events{
+        height: 65vh;
+        margin: 1vh 2vh;
+        background-color: #fff;
+    }
+    .next-events h2{
+        font-size: 1.5em;
+        line-height: 6vh;
+    }
+    .next-events .carousel{
+        width: 100%;
+        height: 50vh;
+    }
+    .next-events .cell{
+        width: 33%;
+        height: 100%;
+        min-width: 300px;
+    }
+    .next-events img{
+        width: 100%;
+        height: 100%;
+        
+    }
+
+}
+
